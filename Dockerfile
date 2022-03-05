@@ -3,7 +3,8 @@ FROM alpine:3.15
 
 # Description of project
 LABEL author="Student" \
-      description="Test images with Alpine"
+      description="Test images with Alpine" \
+      test="Test GitHub Action"
 
 # Install Apache, PHP
 RUN set -e && \
