@@ -3,7 +3,7 @@ name: Docker Image CI
 on:
   push:
     branches: [ main ]
-    
+
 
 jobs:
   docker-build:
@@ -35,7 +35,7 @@ jobs:
         with:
           images: olesyudin/password-generator # Define repository to push
           tags: |
-            type=raw,pattern=\d+,value=action-{{date 'DD.MM.YYYY'}}-{{branch}}-{{sha}}-{{tag}}
+            type=raw,value=action-{{date 'DD.MM.YYYY'}}-{{branch}}-{{sha}}-{{tag}}
 
       # Docker build and push image to DockerHub
       -
