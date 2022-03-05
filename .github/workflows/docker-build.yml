@@ -43,7 +43,7 @@ jobs:
         with:
           images: olesyudin/password-generator # Define repository to push
           tags: |
-            type=raw,value=action-{{branch}}-{{sha}}
+            type=raw,value=action-{{date 'YYYYMMDD'}}-{{branch}}-{{sha}}
 
       # Docker build and push image to DockerHub
       -
