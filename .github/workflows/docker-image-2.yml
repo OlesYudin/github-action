@@ -20,6 +20,6 @@ jobs:
         with:
           image: olesyudin/password-generator
           registry: docker.io
-          tag: action-$(date +%s)
+          tags: action-
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
