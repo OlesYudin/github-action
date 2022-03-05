@@ -47,7 +47,9 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
+            type=sha
 
+      # Docker build and push image to DockerHub
       -
         name: Build and push image
         uses: docker/build-push-action@v2
