@@ -13,8 +13,8 @@ RUN set -e && \
         curl \
         openrc \
         apache2 \
-        php7=7.4.27-r0 \
-        php7-apache2 && \
+        php8 \
+        php8-apache2 && \
     # Remove index.html from container
     rm -rf /var/www/localhost/htdocs/index.html && \
     # Update and start apache
